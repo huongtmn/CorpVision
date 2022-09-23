@@ -9,6 +9,8 @@ html {
     font-family: 'Jost', sans-serif;
 }
 
+/* COMMON */
+
 body a, button, .btn {
     cursor: pointer !important;
 }
@@ -73,14 +75,23 @@ img {
     display: inline-blocks;
 }
 
+/* Mfp */
 .mfp-hide {
     display: none!important;
+}
+
+.mfp-close-btn-in .mfp-close {
+    color: white;
+    position: absolute;
+    top: -40px;
+    right: -13px;
+    font-weight: bold;
+    opacity: 1;
 }
 
 iframe {
     width: 100%;
     height: 420px;
-    display: block;
     border-radius: 10px;
 }
 
@@ -109,8 +120,6 @@ iframe {
     transition: all 0.2s linear;
 }
 
-
-/* COMMON */
 /* container */
 .container {
     max-width: 1200px;
@@ -150,6 +159,14 @@ a:hover {
     font-size: 35px;
     line-height: 45px;
     font-weight: 700;
+}
+
+/* START */
+/* CAROUSEL SECTION */
+.carousel {
+    background-color: yellow;
+    width: 100%;
+    height: 200px;
 }
 
 /* ABOUT SECTION */
@@ -225,6 +242,14 @@ a:hover {
     background-color: #f8f9fa;
 }
 
+.feature-info a {
+    transition: all .5s;
+}
+
+.feature-info h4:hover a {
+    color: #00a63f;
+}
+
 .about .title-head {
     display: block;
     color: #3f3a64;
@@ -236,6 +261,10 @@ a:hover {
 }
 
 /* FEEDBACK SECTION */
+.feedback {
+    background-color: #f8f9fa;
+}
+
 .feedback-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -393,6 +422,11 @@ a:hover {
     margin: 25px 0 5px;
     font-size: 20px;
     font-weight: 600;
+    transition: all .5s;
+}
+
+.team-memberName a:hover h6 {
+    color: #00a63f;
 }
 
 /* VALUE SECTION */
@@ -448,3 +482,6 @@ a:hover {
 .value-details h6:hover a {
     color: #00a63f;
 }
+
+
+  
