@@ -198,20 +198,22 @@ img {
     padding: 3px;
 }
 
-.pagination a {
+.pagination button {
     display: inline-block;
     width: inherit;
     color:  #666;
     text-align: center;
     line-height: 36px;
     font-weight: 600;
-    border: 2px solid #eee;
     padding: 0 15px;
+    border: 2px solid #eee;
     transition: all .5s;
 }
 
-.pagination a:hover {
+.pagination button:hover {
     background-color: #009f4d;
     color: #fff;
     border: 2px solid #009f4d;
 }
+
+
