@@ -229,6 +229,8 @@ a:hover {
 .about-feature {
     flex-wrap: nowrap;
     column-gap: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .about .feature-content {
@@ -345,6 +347,11 @@ a:hover {
     border-color: white;
 }
 
+.intro .btn-video:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
 #intro-video {
     max-width: 750px;
     margin: 40px auto;
@@ -427,6 +434,12 @@ a:hover {
 
 .team-memberName a:hover h6 {
     color: #00a63f;
+}
+
+/* PROJECT SECTION */
+.project-content {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 /* VALUE SECTION */
