@@ -38,8 +38,40 @@
     <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
+    <!-- Pull right bar -->
+    <div class="pull-right-demo-bar toggle-right-sidebar">
+        <span class="fa title-open-right-sidebar tooltipstered fa-angle-double-right"></span>
+    </div>
+    <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
+        <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
+            <div id="demoBar" class="demo-bar">
+                <div class="demo-btns">
+                    <a href="#url">
+                        <span class="demo-icon -back">
+                            <span class="fa fa-arrow-left"></span>
+                        </span>
+                        <span class="demo-text">Back</span>
+                    </a>
+                    <a href="#url">
+                        <span class="demo-icon -download">
+                            <span class="fa fa-download"></span>
+                        </span>
+                        <span class="demo-text">Download</span>
+                    </a>
+                    <a href="#url" class="no-margin-bottom-mobile">
+                        <span class="demo-icon -buy">
+                            <span class="fa fa-shopping-cart"></span>
+                        </span>
+                        <span class="demo-text">Buy</span>
+                    </a>
+                </div>
+            </div>
+            <div class="right-sidebar-panel-content animated fadeInRight" tabindex="5003" style="overflow: hidden; outline: none;">
+            </div>
+        </div>
+    </div>
     <!-- Header -->
-    <header class="fixed-top main-header nav-fixed">
+    <header class="fixed-top main-header nav-fixed active">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark stroke">
                 <!-- logo brand -->
@@ -51,13 +83,12 @@
                     </a>
                 </h1>
                 <!-- btn-collapse -->
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle Navigation">
-                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- nav-bar -->
-                <div class="navbar-collapse collapse">
-                    <ul class="navbar-nav mx-lg-auto">
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-lg-auto justify-content-center">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-23 nav-item active">
                             <a href="#url" class="nav-link active">Home</a>
                         </li>
@@ -67,8 +98,8 @@
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-25 nav-item">
                             <a href="#url" class="nav-link">Services</a>
                         </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-26 nav-item">
-                            <a href="#url" class="nav-link dropdown-toggle">Pages</a>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-26 nav-item dropdown">
+                            <a href="#url" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">Pages</a>
                             <div class="sub-menu dropdown-menu">
                                 <a href="#url" class="dropdown-item">Blog Posts</a>
                                 <a href="#url" class="dropdown-item">404 Page</a>
@@ -197,8 +228,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="shape">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+                        <path fill-opacity="1">
+                                <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                                M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;">
+                            </animate>
+                        </path>
+                    </svg>
+                </div>
             </div>
         </div>
+        <!-- <div class="shape">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+                <path fill-opacity="1">
+                        <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                        M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;">
+                    </animate>
+                </path>
+            </svg>
+        </div> -->
     </section>
     <!-- About -->
     <section class="about py-5">
@@ -226,10 +275,10 @@
                
                 <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
                     <div class="row position-relative">
-                        <div class="col-lg-6">
+                        <div class="col-6">
                             <img src="./css/image/a.jpg" class="radius-image img-fluid" alt="">
                         </div>
-                        <div class="col-lg-6 mt-4">
+                        <div class="col-6 mt-4">
                             <img src="./css/image/c1.jpg" class="radius-image img-fluid mb-md-3 mb-2" alt="">
                             <img src="./css/image/c4.jpg" class="radius-image img-fluid mt-md-3" alt="">
                         </div>
@@ -251,7 +300,7 @@
                 <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4 justify-content-center">
                     <div class="box-grid">
                         <div class="box-wrap">
-                            <div class="icon">
+                            <div class="box-icon">
                                 <img src="./css/image/icon1.png" alt="">
                             </div>
                             <h4>
@@ -259,7 +308,7 @@
                             </h4>
                         </div>
                         <div class="box-wrap">
-                            <div class="icon">
+                            <div class="box-icon">
                                 <img src="./css/image/icon2.png" alt="">
                             </div>
                             <h4>
@@ -267,7 +316,7 @@
                             </h4>
                         </div>
                         <div class="box-wrap">
-                            <div class="icon">
+                            <div class="box-icon">
                                 <img src="./css/image/icon3.png" alt="">
                             </div>
                             <h4>
@@ -275,7 +324,7 @@
                             </h4>
                         </div>
                         <div class="box-wrap">
-                            <div class="icon">
+                            <div class="box-icon">
                                 <img src="./css/image/icon4.png" alt="">
                             </div>
                             <h4>
@@ -757,7 +806,7 @@
                         <h6 class="footer-title">Meta</h6>
                         <ul>
                             <li>
-                                <a href="https://wp.w3layouts.com/corpvision/wp-login.php">Log in</a>
+                                <a href="#urlgin.php">Log in</a>
                             </li>
                             <li>
                                 <a href="https://wp.w3layouts.com/corpvision/feed/">Entries feed</a>
@@ -782,42 +831,27 @@
                 </p>
             </div>
         </section>
-        <!-- <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
-            <span class="fa fa-angle-up"></span>
-        </button> -->
     </footer>
+    <!-- BTN Back-to-top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+    </button>
 
     <!-- Thư viện JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- SLICK JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
-    <script>
-        $('.fade').slick({
-            dots: true,
-            infinite: true,
-            speed: 700,
-            autoplay:true,
-            autoplaySpeed: 2000,
-            loop: true,
-            fade: true,
-            cssEase: 'ease-in-out',
-            arrow: false,
-            prevArrow: '<button class="slick-preslide slick-bg" aria-label="Previous" type="button"><i class="fa-solid fa-arrow-left"></i><button>',
-            nextArrow: '<button class="slick-nextslide slick-bg" aria-label="Next" type="button"><i class="fa-solid fa-arrow-right"></i></button>'
-        });
-    </script>
 
     <!-- OWL JS -->
     <script src="./js/owl.carousel.min.js"></script>
 
-    <script>
-        $('.owl-carousel').owlCarousel({
-            margin:10,
-            nav:false,
-            dots: true,
-            items: 1,
-        })
-    </script>
+    <!-- backToTop JS -->
+    <script src="./js/btnBackToTop.js"></script>
+
+    <!-- MY JS -->
+    <script src="./js/home.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
 </body>
 </html>
