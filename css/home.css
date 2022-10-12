@@ -364,11 +364,6 @@ button.navbar-toggler.collapsed .icon-expand {
     position: relative;
 }
 
-.nav-fixed .navbar-expand-lg .navbar-nav li.nav-item.active {
-    color: #fff;
-    opacity: 0.9;
-}
-
 .nav-fixed .navbar-expand-lg .navbar-nav .nav-link {
     /* color: var(--heading-color); */
     color: #fff;
@@ -376,8 +371,10 @@ button.navbar-toggler.collapsed .icon-expand {
 }
 
 .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
-    color: var(--bg-color);
+    color: var(--primary-color);
     opacity: 1;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {

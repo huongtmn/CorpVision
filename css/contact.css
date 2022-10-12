@@ -96,7 +96,11 @@ img {
 
 /* container */
 .container {
-    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -365,8 +369,10 @@ button.navbar-toggler.collapsed .icon-expand {
 }
 
 .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
-    color: var(--bg-color);
+    color: var(--primary-color);
     opacity: 1;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {

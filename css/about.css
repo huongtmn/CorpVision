@@ -10,6 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html,body {
+    overflow-x: hidden;
+}
+
 :root {
     --primary-color: #009f4d;
     --secondary-color: #213364;
@@ -119,24 +123,6 @@ iframe {
     max-width: 750px;
     margin: 40px auto;
     position: relative
-}
-
-/* icon */
-.area-box i {
-    font-size: 38px;
-    width: 40px;
-    color: #009f4d;
-}
-
-.socials i {
-    line-height: 37px;
-    color: #616161;
-    font-size: 14px;
-    width: 37px;
-    height: 37px;
-    border-radius: 50%;
-    text-align: center;
-    transition: all 0.2s linear;
 }
 
 /* container */
@@ -367,8 +353,10 @@ button.navbar-toggler.collapsed .icon-expand {
 }
 
 .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
-    color: var(--bg-color);
+    color: var(--primary-color);
     opacity: 1;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -547,7 +535,7 @@ header.active {
 
 /* CAROUSEL SECTION */
 .breadcrumb-bg-about {
-    background-image: url(./image/b1.jpg);
+    background-image: url(../css/image/b1.jpg);
     background-size: 100%;
     background-repeat: no-repeat, no-repeat, no-repeat;
     position: relative;
@@ -635,40 +623,38 @@ p.inner-page-para {
     opacity: .8;
 }
 
-.about-feature {
-    flex-wrap: nowrap;
-    column-gap: 30px;
-    margin-right: 30px;
-    margin-left: 30px;
-}
-
-.about .feature-content {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 20px;
+.about .area-box {
     padding: 50px 35px;
     position: relative;
     z-index: 1;
     border-radius: 8px;
-    background-color: #f8f9fa;
+    background-color: var(--bg-lightgrey);
+    box-shadow: 0 1rem 2rem var(--box-shadow-color);
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
 }
-
-.feature-info a {
-    transition: all .5s;
+.about .area-box i {
+    font-size: 38px;
+    width: 40px;
+    color: var(--primary-color);
 }
-
-.feature-info h4:hover a {
-    color: #00a63f;
-}
-
-.about .title-head {
+.about h4 a.title-head {
     display: block;
-    color: #3f3a64;
+    color: var(--heading-color);
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 15px;
     font-size: 22px;
     letter-spacing: 0;
+}
+
+.area-box-info a {
+    transition: all .5s;
+}
+
+.area-box-info h4:hover a {
+    color: #00a63f;
 }
 
 /* FEEDBACK SECTION */
