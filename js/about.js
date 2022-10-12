@@ -1,21 +1,20 @@
 // change header css when scrolling 
-(function() {
+$(function() {
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 50) {
-            // $("header.main-header").addClass("changeHeight");
-            $("header.main-header").addClass("nav-fixed");
+            $("header.main-header").addClass("changeHeight");
+            $("header.main-header").addClass("changeColor");
             $("header .navbar .navbar-brand").addClass("fontColor");
-            $(".nav-fixed .navbar-expand-lg .navbar-nav .nav-link").addClass("navColor");
-            // $(".nav-fixed .navbar-expand-lg .navbar-nav li.nav-item.active").addClass("navActiveColor");
+            $(".navbar-expand-lg .navbar-nav .nav-link").addClass("navColor");
+            $(".nav-fixed .navbar-expand-lg .navbar-nav li.nav-item.active").addClass("navActiveColor");
             $(".mode-container i").addClass("iconColor");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
-            // $("header.main-header").removeClass("changeHeight");
-            // $("header.nav-fixed").removeClass("changeColor");
-            $("header.main-header").removeClass("nav-fixed");
+            $("header.main-header").removeClass("changeHeight");
+            $("header.main-header").removeClass("changeColor");
             $("header .navbar .navbar-brand").removeClass("fontColor");
-            $(".nav-fixed .navbar-expand-lg .navbar-nav .nav-link").removeClass("navColor");
-            // $(".nav-fixed .navbar-expand-lg .navbar-nav li.nav-item.active").removeClass("navActiveColor");
+            $(".navbar-expand-lg .navbar-nav .nav-link").removeClass("navColor");
+            $(".nav-fixed .navbar-expand-lg .navbar-nav li.nav-item.active").removeClass("navActiveColor");
             $(".mode-container i").removeClass("iconColor");
         }
     })
