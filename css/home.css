@@ -568,6 +568,7 @@ header.active {
 .slick-slider .slick-track, 
 .slick-slider .slick-list {
     transform: translate3d(0, 0, 0);
+    height: 800px;
 }
 
 .slick-initialized .banner-slide {
@@ -666,7 +667,7 @@ header.active {
 }
 
 /* slick arrow */
-.banner-slider .slick-bg {
+.banner-slider .slick-arrow {
     display: block;
     position: absolute;
     bottom: 50px;
@@ -727,6 +728,7 @@ svg {
 .shape path {
     fill: var(--bg-color);
 }
+
 
 /* ABOUT SECTION */
 .about span {
