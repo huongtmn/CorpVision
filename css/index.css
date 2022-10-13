@@ -274,7 +274,7 @@ span.demo-icon.-back span.fa {
 /* HEADER SECTION */
 header.nav-fixed {
     padding: 0px;
-    background-color: #fff;
+    background-color: transparent;
     height: 80px;
     border-bottom: none;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
@@ -440,6 +440,9 @@ header.active {
         position: absolute;
         right: 62px;
         top: 18px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        text-align: center;
     }
     .navbar-expand-lg .navbar-nav .dropdown-menu {
         transform: translateX(0px);
@@ -700,12 +703,12 @@ header.active {
 
 .banner-slider .slick-preslide {
     right: 100px;
-    bottom: 40px;
+    bottom: 250px;
 }
 
 .banner-slider .slick-nextslide {
     right: 25px;
-    bottom: 40px;
+    bottom: 250px;
 }
 
 /* shape */
