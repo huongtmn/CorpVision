@@ -1,0 +1,9 @@
+Corp Vision Project
+Assignee person: Nguyen Thi Mai Huong
+
+Home page
+About page
+Pages -> Blog posts
+Contact page
+
+Responsive: desktop (min-width 992px), ipad air (min-width 768px), mobile (min-width 576px)
